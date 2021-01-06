@@ -418,7 +418,7 @@ footer {
 .about {
     display: flex;
     justify-content: space-between;
-    margin: 10px 30px 30px;
+    margin: 0 30px;
     align-items: center;
     align-content: center;
     color: var(--color-texto);
