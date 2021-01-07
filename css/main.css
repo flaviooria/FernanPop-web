@@ -384,6 +384,11 @@ textarea {
     font-weight: var(--placeholder-weight);
 }
 
+.contact-info textarea {
+    overflow: visible;
+    resize: none;
+}
+
 .contact-info button {
     height: 2em;
     border-radius: 5px;
