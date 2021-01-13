@@ -27,7 +27,7 @@
             <div class="header animate__animated animate__fadeInLeftBig animate__fast">
                 <div class="header-navbar">
                     <ul class="navbar-links">
-                        <li><a href="#caracteristicas">Caraterictas</a></li>
+                        <li><a href="#caracteristicas">Caracteristicas</a></li>
                         <li><a href="#faqs">Faqs</a></li>
                         <li><a href="#contacto">Contacto</a></li>
                     </ul>
@@ -36,7 +36,7 @@
                     <form action="">
                         <i class="fas fa-user-circle"></i>
                         <div class="sing-in-layer">
-                            <h3>Tienes una cuenta</h3>
+                            <h3>¿Tienes una cuenta?</h3>
                             <div class="sing-in">
                                 <a href="">Iniciar Sesión</a>
                             </div>
@@ -71,7 +71,7 @@
         </div>
     </header>
     <section id="caracteristicas">
-        <div class="features" data-aos="zoom-in" data-aos-easing="ease-in-sine">
+        <div class="features" data-aos="zoom-in" data-aos-easing="ease">
             <h3>Caracteristicas</h3>
             <div class="features-items">
                 <div class="item-badge">
@@ -99,11 +99,10 @@
                     <path d="M0.00,49.98 C149.99,150.00 271.49,-49.98 500.00,49.98 L500.00,0.00 L0.00,0.00 Z"
                         style="stroke: none;"></path>
                 </svg></div>
-            <div class="faqs-logo" data-aos="fade-right" data-aos-offset="300" data-aos-easing="ease-in-sine">
+            <div class="faqs-logo" data-aos="fade-in" data-aos-easing="ease">
                 <img src="./assets/img/faq.jpg" width="500" alt="">
             </div>
-            <div class="faqs-list" data-aos="fade-left" data-aos-offset="500" data-aos-duration="500"
-                data-aos-easing="ease-in-sine">
+            <div class="faqs-list" data-aos="fade-in" data-aos-easing="ease">
                 <h1>Preguntas Frecuentes</h1>
                 <p class="question">¿Puedó pagar con distintas entidades, incluyendo PayPal?</p>
                 <p class="response"> - Claro sí puedes, nuestra app tiene trato directo con entidades financieras para
@@ -128,9 +127,9 @@
             <div class="contact-info">
                 <form action="">
                     <label for="">Correo:</label>
-                    <input type="email" name="" id="">
+                    <input type="email" name="" id="contact-email">
                     <label for="">Indica cual es tu problema o consulta:</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                    <textarea name="" id="message-question" cols="30" rows="10"></textarea>
                     <button>Enviar <i class="fas fa-envelope-open-text"></i></button>
                 </form>
             </div>
@@ -156,30 +155,6 @@
 </body>
 <!--Script de animation scroll-->
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<!--Script de smoth scroll-->
-<script>
-    const mostrarContrasenia = () => {
-        let tipo = document.getElementById('password');
-        return tipo.type = ((tipo.type == "password") ? "text" : "password")
-    }
-
-    window.scroll({
-        top: 2500,
-        left: 0,
-        behavior: 'smooth'
-    });
-
-    // Scroll certain amounts from current position 
-    window.scrollBy({
-        top: 100, // could be negative value
-        left: 0,
-        behavior: 'smooth'
-    });
-
-    AOS.init({
-        offset: 500,
-        duration: 1000
-    });
-</script>
+<script src="js/app.js"></script>
 
 </html>

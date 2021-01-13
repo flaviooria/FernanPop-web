@@ -85,7 +85,7 @@ body {
 }
 
 .sing-in-layer h3 {
-    margin: 0 20px;
+    margin: 0 15px;
     color: var(--color-texto);
     font-family: var(--fuente-titulos);
     font-weight: var(--subtitulo-weight);
@@ -99,7 +99,7 @@ body {
     padding: 5px;
     margin-left: 10px;
     position: absolute;
-    right: -70px;
+    right: -80px;
     display: flex;
     align-items: center;
     width: 120px;
