@@ -73,6 +73,11 @@ body {
     font-size: 1.5em;
 }
 
+.fa-copy {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
 .slogan-web {
     margin-top: 30px;
     text-align: center;
