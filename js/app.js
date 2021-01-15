@@ -1,6 +1,6 @@
 const mostrarContrasenia = () => {
-    let tipo = document.getElementById('password');
-    return tipo.type = ((tipo.type == "password") ? "text" : "password")
+    let textPassword = document.getElementById('password');
+    return textPassword.type = ((textPassword.type == "password") ? "text" : "password")
 }
 
 //Script de smoth scroll
