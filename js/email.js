@@ -1,6 +1,6 @@
 const botonCopiar = document.querySelector('i.fa-copy')
 const token = document.getElementById('token')
-
+var textoDeToken = document.getElementById('token').innerText
 botonCopiar.addEventListener('click' , () => {
     token.focus()
 
@@ -30,7 +30,9 @@ botonCopiar.addEventListener('click' , () => {
         currentRange && selection.addRange(currentRange);
     }
 
-    setTimeout(() => token.innerHTML = 'F2L$%$23', 1000)
+     
+    
+    setTimeout(() => token.innerHTML = textoDeToken, 1000)
 })
 
 
