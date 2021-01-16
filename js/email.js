@@ -32,7 +32,7 @@ botonCopiar.addEventListener('click' , () => {
 
      
     
-    setTimeout(() => token.innerHTML = textoDeToken, 1000)
+    setTimeout(() => token.innerHTML = textoDeToken, 500)
 })
 
 
