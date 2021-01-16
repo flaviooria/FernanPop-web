@@ -14,7 +14,7 @@ body {
     font-family: var(--fuente-texto);
     -webkit-box-sizing: border-box;
     box-sizing: border-box;
-    background: linear-gradient(0deg, hsla(180, 85%, 64%, 1) 0%, hsla(202, 46%, 72%, 1) 60%, hsla(202, 46%, 72%, 1) 100%);
+    background: linear-gradient(to bottom, rgba(85,241,241,1) 0%, rgba(151,192,216,1) 46%, rgba(151,192,216,1) 69%, rgba(85,241,241,1) 100%);
 }
 
 .container {
@@ -153,6 +153,25 @@ hr {
 
     .token {
         margin: 30px 20px;
+    }
+
+    .footer p {
+        text-align: center;
+        max-width: 200px;
+    }
+}
+
+
+@media screen and (max-width: 360px) {
+    .token p {
+        font-size: 1em;
+        
+    }
+
+    .token {
+        margin: 30px auto;
+        padding: 0 20px;
+        width: 200px;
     }
 
     .footer p {
