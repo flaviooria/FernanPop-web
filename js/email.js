@@ -1,8 +1,8 @@
 const botonCopiar = document.querySelector('i.fa-copy')
 const token = document.getElementById('token')
-var textoDeToken = document.getElementById('token').innerText
-
-
+//var textoDeToken = document.getElementById('token').innerText
+let tokenAletorio = Math.floor(Math.random() * 9999) + 1 
+let textoDeToken = token.innerHTML = tokenAletorio;
 
 botonCopiar.addEventListener('click' , () => {
     token.focus()

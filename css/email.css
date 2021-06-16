@@ -90,6 +90,16 @@ body {
     color:#EE6C4D ;
 }
 
+.home {
+    text-decoration: none;
+    color: var(--color-texto);
+}
+
+.home:hover {
+    color:#EE6C4D;
+    border-bottom: #293241 1px solid;
+}
+
 .footer {
     display: flex;
     align-items: center;
@@ -187,3 +197,4 @@ hr {
         margin-left: 30px;
     }
 }
+
