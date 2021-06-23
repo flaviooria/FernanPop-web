@@ -22,6 +22,7 @@
 
 <body>
     <div class="container">
+        <!-- Header -->
         <header>
             <div class="hamburger hamburger--spin">
                 <div class="hamburger-box">
@@ -38,31 +39,28 @@
                     <li><a class="link" href="">Ver mis tratos</a></li>
                     <li><a class="link" href="">Cerrar Sesión</a></li>
                 </ul>
-            </nav> 
+            </nav>
         </header>
-        <!-- <section class="hero">
+        <!-- Hero  -->
+        <section class="hero">
             <div class="hero-description">
-                <div class="hero-title">
-                    <h3>Bienvenido a FernanPop Flavio</h3>
+                <h3 class="hero-title">Bienvenido a FernanPop Flavio</h3>
                 <p class="hero-subtitle">Tus productos:</p>
+                <div class="hero-notifications">
+                    <ul>
+                        <li><a href=""><i class="far fa-bell"></i></a></li>
+                        <li><a href=""><i class="far fa-comment-alt"></i></a></li>
+                    </ul>
                 </div>
-                <section class="navbar-notifications">
-                    <div class="notifications">
-                        <ul>
-                            <li><a href=""><i class="far fa-bell"></i></a></li>
-                            <li><a href=""><i class="far fa-comment-alt"></i></a></li>
-                        </ul>
+                <form action="">
+                    <div class="header-search">
+                        <input type="text" name="nameProduct" id="nameProduct" placeholder="Busca todo lo que quieras">
+                        <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
                     </div>
-                    <form action="" autocomplete="off">
-                        <div class="header-search">
-                            <input type="text" name="nameProduct" id="nameProduct" placeholder="Busca todo lo que quieras">
-                            <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
-                        </div>
-                    </form>
-                </section>
+                </form>
             </div>
-            
-            <div class="products">
+
+            <!-- <div class="products">
                 <div class="card">
                     <img src="../assets/img/macbook.jpeg" alt="imagen">
                     <h3>Titulo</h3>
@@ -135,12 +133,12 @@
                         <a href="" class="btn-delete">Borrar Producto</a>
                     </div>
                 </div>
-            </div>
+            </div> -->
         </section>
-        <footer>
+        <!-- <footer>
             <p>® Derechos Reservados</p>
             <a href="">FernanPop</a>
-        </footer> -->
+        </footer>  -->
     </div>
     <script>
         let hamburger = document.querySelector(".hamburger--spin");
