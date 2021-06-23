@@ -43,7 +43,7 @@ header {
 }
 
 .orange {
-
+    color: var(--orange);
 }
 
 .hamburger {
