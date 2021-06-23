@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- Styles  -->
+    <link rel="stylesheet" href="../css/home.css">
+    <!--fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500;700&family=Raleway:wght@700;900&display=swap"
+        rel="stylesheet">
+    <!--fontawesome icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+        integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
+    <!-- Style of hamburger_menu -->
+    <link href="../dist/hamburgers.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <div class="hamburger hamburger--spin">
+                <div class="hamburger-box">
+                    <div class="hamburger-inner">
+                    </div>
+                </div>
+            </div>
+            <div class="logo">
+                <h1>Fernan<span class="orange">Pop</span></h1>
+            </div>
+            <nav class="navbar-menu">
+                <ul>
+                    <li><a class="link" href="">Editar Perfíl</a></li>
+                    <li><a class="link" href="">Ver mis tratos</a></li>
+                    <li><a class="link" href="">Cerrar Sesión</a></li>
+                </ul>
+            </nav> 
+        </header>
+        <!-- <section class="hero">
+            <div class="hero-description">
+                <div class="hero-title">
+                    <h3>Bienvenido a FernanPop Flavio</h3>
+                <p class="hero-subtitle">Tus productos:</p>
+                </div>
+                <section class="navbar-notifications">
+                    <div class="notifications">
+                        <ul>
+                            <li><a href=""><i class="far fa-bell"></i></a></li>
+                            <li><a href=""><i class="far fa-comment-alt"></i></a></li>
+                        </ul>
+                    </div>
+                    <form action="" autocomplete="off">
+                        <div class="header-search">
+                            <input type="text" name="nameProduct" id="nameProduct" placeholder="Busca todo lo que quieras">
+                            <button type="submit" class="btn-search"><i class="fas fa-search"></i></button>
+                        </div>
+                    </form>
+                </section>
+            </div>
+            
+            <div class="products">
+                <div class="card">
+                    <img src="../assets/img/macbook.jpeg" alt="imagen">
+                    <h3>Titulo</h3>
+                    <div class="focus-content">
+                        <p>Descripcion</p>
+                        <p>Precio</p>
+                        <a href="" class="btn-delete">Borrar Producto</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../assets/img/macbook.jpeg" alt="imagen">
+                    <h3>Titulo</h3>
+                    <div class="focus-content">
+                        <p>Descripcion</p>
+                        <p>Precio</p>
+                        <a href="" class="btn-delete">Borrar Producto</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../assets/img/macbook.jpeg" alt="imagen">
+                    <h3>Titulo</h3>
+                    <div class="focus-content">
+                        <p>Descripcion</p>
+                        <p>Precio</p>
+                        <a href="" class="btn-delete">Borrar Producto</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../assets/img/macbook.jpeg" alt="imagen">
+                    <h3>Titulo</h3>
+                    <div class="focus-content">
+                        <p>Descripcion</p>
+                        <p>Precio</p>
+                        <a href="" class="btn-delete">Borrar Producto</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../assets/img/macbook.jpeg" alt="imagen">
+                    <h3>Titulo</h3>
+                    <div class="focus-content">
+                        <p>Descripcion</p>
+                        <p>Precio</p>
+                        <a href="" class="btn-delete">Borrar Producto</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../assets/img/macbook.jpeg" alt="imagen">
+                    <h3>Titulo</h3>
+                    <div class="focus-content">
+                        <p>Descripcion</p>
+                        <p>Precio</p>
+                        <a href="" class="btn-delete">Borrar Producto</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../assets/img/macbook.jpeg" alt="imagen">
+                    <h3>Titulo</h3>
+                    <div class="focus-content">
+                        <p>Descripcion</p>
+                        <p>Precio</p>
+                        <a href="" class="btn-delete">Borrar Producto</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../assets/img/macbook.jpeg" alt="imagen">
+                    <h3>Titulo</h3>
+                    <div class="focus-content">
+                        <p>Descripcion</p>
+                        <p>Precio</p>
+                        <a href="" class="btn-delete">Borrar Producto</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <p>® Derechos Reservados</p>
+            <a href="">FernanPop</a>
+        </footer> -->
+    </div>
+    <script>
+        let hamburger = document.querySelector(".hamburger--spin");
+
+        let menu = document.querySelector(".navbar-menu");
+
+
+        console.log(hamburger)
+        hamburger.addEventListener("click", () => {
+            hamburger.classList.toggle("is-active");
+            menu.classList.toggle("open");
+        })
+    </script>
+</body>
+
+</html>

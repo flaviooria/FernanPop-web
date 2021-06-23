@@ -21,7 +21,7 @@ body {
 }
 
 .hero {
-    background: linear-gradient(0deg, #55f1f1 0%, hsla(202, 46%, 72%, 1) 60%, hsla(202, 46%, 72%, 1) 100%);
+    background: linear-gradient(0deg, #55f1f1 0%, #97c0d8 60%, #97c0d8 100%);
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-template-areas: "header header"
@@ -422,7 +422,7 @@ strong {
 
 
 .faqs {
-    background: linear-gradient(0deg, hsla(202, 46%, 72%, 1) 0%, hsla(202, 46%, 72%, 1) 60%, hsla(180, 85%, 64%, 1) 100%);
+    background: linear-gradient(0deg, #97c0d8 0%, #97c0d8 60%, #55f1f1 100%);
     display: grid;
     grid-template-columns: 1fr 1fr;
     height: 900px;
