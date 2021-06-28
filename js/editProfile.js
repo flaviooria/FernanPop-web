@@ -1,3 +1,28 @@
+//Avatar de usuario
+document.querySelector("#avatar").addEventListener("change", cargarAvartarUser)
+
+function cargarAvartarUser(e) {
+    //Obtengo el archivo que cargo
+    let img = e.target.files[0];
+    //Creo un flujo para leer el fichero
+    let lectorImg = new FileReader();
+    //Leo el fichero
+    lectorImg.addEventListener("load", (e) => {
+        //Muestro imagen en 
+        let imgSrc = e.target.result;
+        //la etiqueta img del avatar para pintarla
+        document.querySelector(".img-profile").src = imgSrc;
+
+        console.log("lo hizo");
+    })
+    
+    if (img != null) {
+        lectorImg.readAsDataURL(img);
+    }
+    
+    
+}
+
 //Esto es para dar los estilos a los inputs
 let inputs = document.querySelectorAll("input");
 
