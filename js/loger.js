@@ -67,7 +67,6 @@ function validarForm(e) {
 }
 
 function enviarForm(e) {
-    e.stopPropagation()
     e.preventDefault()
 
     //mostrar spinner
@@ -82,9 +81,11 @@ function enviarForm(e) {
         mensaje.classList.add("mensaje-succes")
         //inserta el parrafo antes del spinner
         form.insertBefore(mensaje, spinner)
+        form.action  = "./inicio.html"
         //despus de 2.5seg se elimina el mensaje y se resetea el form
         setTimeout(() => {
             mensaje.remove()
+            form.submit()
             btnSend.setAttribute("disabled", "")
             form.reset()
         }, 500)

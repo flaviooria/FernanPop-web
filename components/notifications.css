@@ -59,7 +59,7 @@ body {
 }
 
 .notification .box {
-    width: 200px;
+    width: 250px;
     height: auto;
     background: white;
     position: absolute;
@@ -84,30 +84,30 @@ body {
 }
 
 .notification_box {
-    margin: 0.4em auto 0 auto;
-    width: 85%;
-    height: inherit;
+    margin: 0 auto;
+    width: 80%;
+    height: 120px;
     overflow-x: auto;
+    border: 1px solid blue;
+    padding: 5px;
 }
 
 .notification_box p {
     margin-bottom: 0.4em;
+    width: 100%;
     color: rgb(43, 43, 43);
 }
 
 .notification_box::-webkit-scrollbar {
-    width: 2px;
+    width: 8px;
+    background-color: rgb(236, 240, 240);
+    border-radius: 5px;
 }
 
 .notification_box::-webkit-scrollbar-thumb {
-    background: pink;
-}
-
-.notification_box::-webkit-scrollbar-thumb {
-    background: green;
-}
-
-.notification_box::-webkit-scrollbar-thumb:hover {
-    background: skyblue;
+    background: rgb(78, 102, 135);
+    border-radius: 5px;
+    width: -12px;
+    overflow: hidden;
 }
 
