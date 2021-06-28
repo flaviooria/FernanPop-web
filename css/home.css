@@ -362,6 +362,9 @@ header {
     overflow: hidden;
 }
 
+
+/* Search bar */
+
 .hero .form-search {
     display: grid;
     grid-column: 1 / -1;
@@ -405,6 +408,8 @@ header {
     cursor: pointer;
 }
 
+/* Hero Products */
+
 .products {
     border-radius: 10px;
     grid-row: 3 / 4;
@@ -432,6 +437,8 @@ header {
     overflow: hidden;
 }
 
+
+/* Cards */
 
 .card {
     width: 250px;
@@ -527,6 +534,8 @@ header {
     color: var(--blue-soft);
 }
 
+/* Hamburger menu */
+
 .hamburger {
     z-index: 5;
     /* position: fixed; */
@@ -581,6 +590,8 @@ header {
     padding: 10px;
     border-radius: 8px;
 }
+
+/* footer */
 
 footer {
     grid-row: 3 / 4;

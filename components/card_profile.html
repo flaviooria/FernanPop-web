@@ -1,12 +1,160 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
+        integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+<style>
+    .card {
+        width: 250px;
+        min-height: 100vh;
+        overflow: hidden;
+        background-color: aliceblue;
+        box-shadow: 0 20px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .card .card-header {
+        height: 150px;
+        position: relative;
+    }
+
+    .waves-container {
+        height: 100%;
+    }
+
+    .wave {
+        position: absolute;
+        width: 650px;
+        height: 650px;
+        background-image: linear-gradient(to bottom left, #8aafff, #5B86E5);
+        transform: translateX(-50%);
+    }
+
+    .waves-container .wave1 {
+        border-radius: 50%;
+        top: -330%;
+        left: 50%;
+        animation: spin 12s linear infinite;
+    }
+
+    .waves-container .wave2 {
+        border-radius: 46%;
+        top: -332%;
+        left: 48%;
+        opacity: 0.5;
+        animation: spin 16s linear infinite;
+    }
+
+    .waves-container .wave3 {
+        border-radius: 40%;
+        top: -328%;
+        left: 52%;
+        opacity: 0.2;
+        animation: spin 16s linear infinite;
+    }
+
+    @keyframes spin {
+        to {
+            transform: translateX(-50%) rotate(360deg);
+        }
+    }
+
+    .card-header .img-profile {
+        margin: 0 auto;
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        position: absolute;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .card-body {
+        margin-top: 100px;
+        text-align: center;
+        padding: 0 20px;
+    }
+
+    .card-body h2 {
+        text-transform: capitalize;
+        color: rgb(82, 82, 82);
+    }
+
+    .card-body p {
+        font-size: 1em;
+        line-height: 1.8;
+        color: rgba(82, 82, 82, 0.6);
+        margin: 20px 0;
+    }
+
+    .stars-outer {
+        display: inline-block;
+        position: relative;
+        font-family: FontAwesome;
+    }
+
+    .stars-outer::before {
+        content: "\f006 \f006 \f006 \f006 \f006";
+        color: #8aafff;
+    }
+
+    .stars-inner {
+        position: absolute;
+        top: 0;
+        left: 0;
+        white-space: nowrap;
+        overflow: hidden;
+        width: 0;
+    }
+
+    .stars-inner::before {
+        content: "\f005 \f005 \f005 \f005 \f005";
+        color: #f8ce0b;
+    }
+</style>
+
 <body>
-    
+    <div class="card">
+        <div class="card-header">
+            <div class="waves-container">
+                <div class="wave wave1"></div>
+                <div class="wave wave2"></div>
+                <div class="wave wave3"></div>
+            </div>
+            <img class="img-profile" src="../assets/icons/user.svg" alt="img_profile">
+        </div>
+        <div class="card-body">
+            <h2>Flavio Oria</h2>
+            <div class="profile_ranking">
+                <p class="ranking"></p>            
+                <div class="stars-outer">
+                    <div class="stars-inner"></div>
+                </div>
+            </div>
+            <p>Descripción</p>
+        </div>
+    </div>
+    <script>
+         //Esta es la media que tiene el usuario
+        const rating = 1.8
+        // total number of stars
+        const starTotal = 5;
+
+
+        const starPercentage = (rating / starTotal) * 100;
+
+        const starPercentageRounded = `${(Math.round(starPercentage / 10) * 10)}%`;
+
+        document.querySelector(".profile_ranking .ranking").innerHTML = rating;
+        
+        document.querySelector(`.profile_ranking .stars-inner`).style.width = starPercentageRounded;
+    </script>
 </body>
+
 </html>
