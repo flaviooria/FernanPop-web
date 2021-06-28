@@ -17,6 +17,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css"
         integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--fontawesome icons-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css"
+    integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous" />
     <!-- Style of hamburger_menu -->
     <link href="../dist/hamburgers.css" rel="stylesheet">
 </head>
@@ -42,17 +45,83 @@
                 </ul>
             </nav>
         </header>
+        <!-- Hero -->
+        <div class="hero">
+            <!-- Card Profile -->
+            <div class="hero-card-profile">
+                <div class="card">
+                    <div class="card-header">
+                        <div class="waves-container">
+                            <div class="wave wave1"></div>
+                            <div class="wave wave2"></div>
+                            <div class="wave wave3"></div>
+                        </div>
+                        <img class="img-profile" src="../assets/icons/user.svg" alt="img_profile">
+                    </div>
+                    <div class="card-body">
+                        <h2>Flavio Oria</h2>
+                        <div class="profile_ranking">
+                            <p class="ranking"></p>
+                            <div class="stars-outer">
+                                <div class="stars-inner"></div>
+                            </div>
+                        </div>
+                        <p class="member">Miembro desde el 21/05/2021</p>
+                    </div>
+                </div>
+            </div>
+            <!-- Edit Profile -->
+            <div class="hero-edit-profile">
+                <h3 class="edit-title">Tus Datos</h3>
+                <form action="./inicio.html" class="form">
+                    <div class="form-group">
+                        <label class="form-label" for="first">Nombre</label>
+                        <input id="first" class="form-input" type="text" value="Flavio Cesar" />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="last">Apellido</label>
+                        <input id="last" class="form-input" type="text" value="Oria Pinto"/>
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="color">Correo Electronico</label>
+                        <input id="color" class="form-input" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="color">Movil</label>
+                        <input id="color" class="form-input" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="color">Edad</label>
+                        <input id="color" class="form-input" type="text" />
+                    </div>
+                    <div class="form-group">
+                        <label class="form-label" for="color">Contraseña</label>
+                        <input id="color" class="form-input" type="text" />
+                    </div>
+                    <button class="btn-save">Guardar Datos</button>
+                    <span class="save-success">Datos guardados correctamente</span>
+                </form>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer>
+            <p class="footer-rigth">® Derechos Reservados</p>
+            <a class="footer-designed" href="">Designed by @flaviooria</a>
+            <div class="about-media">
+                <ul>
+                    <li><a href="" title="facebook/fernanpop.com"><i class="fab fa-facebook-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-instagram-square"></i></a></li>
+                    <li><a href=""><i class="fab fa-twitter-square"></i></a></li>
+                    <li><a class="inicio" href="#inicio" title="Inicio"><i class="fas fa-arrow-circle-up"></i></a></li>
+                </ul>
+            </div>
+        </footer>
     </div>
-    <script>
-        let hamburger = document.querySelector(".hamburger--spin");
-
-        let menu = document.querySelector(".navbar-menu");
-
-        hamburger.addEventListener("click", () => {
-            hamburger.classList.toggle("is-active");
-            menu.classList.toggle("open");
-        })
+    <!-- cdn de jquery -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"
+        integrity="sha512-qzrZqY/kMVCEYeu/gCm8U2800Wz++LTGK4pitW/iswpCbjwxhsmUwleL1YXaHImptCHG0vJwU7Ly7ROw3ZQoww=="
+        crossorigin="anonymous" referrerpolicy="no-referrer">
     </script>
+    <script src="../js/editProfile.js"></script>
 </body>
-
 </html>
