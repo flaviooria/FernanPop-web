@@ -140,7 +140,7 @@ AOS.init({
 let products = ["MacBook Pro", "MacBook Air", "Iphone 8"]
 console.log(products)
 
-autocompletar()
+// autocompletar()
 
 // function autocompletar() {
 
